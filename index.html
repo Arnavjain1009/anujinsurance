@@ -1,11 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Company</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            max-width: 120px;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #333;
+            font-weight: normal;
+        }
+
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 1.5em;
+        }
+
+        p {
+            color: #666;
+            font-size: 1.1em;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        footer {
+            padding: 20px 0;
+            border-top: 1px solid #eee;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        button {
+            background-color: #333;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #555;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
 <body>
-
-<h1>Anuj insurance</h1>
-
-<p> too expensive</p>
-
+    <header>
+        <img src="https://raw.githubusercontent.com/Arnavjain1009/anujinsurance/main/Insurance-removebg-preview.png" alt="Insurance Company Logo" class="logo">
+        <h1>Welcome to Our Insurance Company</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Our Services</h2>
+            <p>We provide a variety of insurance services to meet all your needs. Choose from our comprehensive insurance plans to protect you and your loved ones.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="button-container">
+            <button onclick="alert('Home Insurance')">Home Insurance</button>
+            <button onclick="alert('Auto Insurance')">Auto Insurance</button>
+            <button onclick="alert('Life Insurance')">Life Insurance</button>
+            <button onclick="alert('Health Insurance')">Health Insurance</button>
+            <button onclick="alert('Travel Insurance')">Travel Insurance</button>
+        </div>
+    </footer>
+    <script>
+        // JavaScript functionality can be added here if needed
+        // Currently, buttons will simply show alerts on click
+    </script>
 </body>
 </html>
-
