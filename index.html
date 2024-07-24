@@ -18,14 +18,13 @@
 
         header {
             text-align: center;
-            padding: 40px 20px;
+            padding: 20px;
             border-bottom: 1px solid #eee;
         }
 
         .logo {
-            max-width: 120px;
-            display: block;
-            margin: 0 auto 20px;
+            width: 50%;
+            height: auto;
         }
 
         h1 {
@@ -37,7 +36,7 @@
 
         main {
             flex: 1;
-            padding: 40px 20px;
+            padding: 20px;
             text-align: center;
         }
 
@@ -61,6 +60,7 @@
 
         .button-container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             gap: 10px;
         }
@@ -80,12 +80,53 @@
             background-color: #555;
             transform: translateY(-2px);
         }
+
+        @media (max-width: 768px) {
+            .logo {
+                width: 70%;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                width: 80%;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+
+            button {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <img src="https://raw.githubusercontent.com/Arnavjain1009/anujinsurance/main/Insurance-removebg-preview.png" alt="Insurance Company Logo" class="logo">
-        <h1>Welcome to Our Insurance Company</h1>
+        <h1>Welcome to Our business</h1>
     </header>
     <main>
         <section>
